@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* phần header */
+.navbar {
+    background: linear-gradient(to right, #d6249f, #285AEB);
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a:hover{
+    color: #6ba7e0;
+    transition: 0.2s;
+}
+
+.navbar-nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar-nav li:hover a {
+    color: #6ba7e0;
+    transition: 0.2s;
+}
+
+
+
+/* phần form tìm kiếm */
+.search_form {
+    text-align: center;
+}
+
+.search_form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search_form button {
+    padding: 10px 20px;
+    background-color: #3d85ca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search_form button:hover {
+    background-color: #6ba7e0;
+    color: white;
+}
+
+/* phần danh sách người dùng tìm kiếm */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
