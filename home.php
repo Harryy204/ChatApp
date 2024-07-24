@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
-// session_start();
-// include("include/config.php");
-// if(!isset($_SESSION['user_email'])){
-//     header('location: login.php');
-// }else {
-// include("include/header.php");
-
+session_start();
+include("include/config.php");
+if(!isset($_SESSION['user_email'])){
+    header('location: login.php');
+}else {
+include("include/header.php");
+}
 ?>
 <html lang="en">
 
@@ -42,7 +42,7 @@
                 <div class="row">
                     <!-- lấy thông tin những người dùng đã đăng nhập -->
                     <?php
-                    session_start();
+                    // session_start();
                     include 'include/config.php';
                     $user = $_SESSION['user_email'];
                     $get_user = "SELECT * FROM users WHERE user_email = '$user'";
